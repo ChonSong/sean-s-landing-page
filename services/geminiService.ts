@@ -30,16 +30,16 @@ export const sendMessageToGemini = async (message: string): Promise<string> => {
   }
 
   try {
-    const model = ai.models;
-    const response = await model.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: message,
-      config: {
-        systemInstruction: SYSTEM_INSTRUCTION,
-      }
+    const model = ai.getGenerativeModel({
+      model: 'gemini-2.0-flash-exp',
+      systemInstruction: SYSTEM_INSTRUCTION
     });
-    
-    return response.text || "I couldn't generate a response at the moment.";
+
+    const result = await model.generateContent(message);
+    const response = await result.response;
+    const text = response.text();
+
+    return text || "I couldn't generate a response at the moment.";
   } catch (error) {
     console.error("Gemini API Error:", error);
     return "Sorry, I encountered an error while processing your request.";

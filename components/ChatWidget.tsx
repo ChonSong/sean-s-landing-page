@@ -8,7 +8,7 @@ export const ChatWidget: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<Message[]>([
-    { id: '0', role: 'model', text: 'Hi! I\'m Alex\'s AI Assistant. Ask me anything about his projects or skills.' }
+    { id: '0', role: 'model', text: 'Hi! I\'m Sean\'s AI Assistant. Ask me anything about his projects or skills.' }
   ]);
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -47,7 +47,7 @@ export const ChatWidget: React.FC = () => {
     <>
       {/* Toggle Button */}
       <motion.button
-        className="fixed bottom-8 right-8 w-14 h-14 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full shadow-xl flex items-center justify-center z-50 border border-white/20"
+        className="fixed bottom-8 right-4 sm:right-8 w-14 h-14 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full shadow-xl flex items-center justify-center z-50 border border-white/20"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
@@ -62,7 +62,7 @@ export const ChatWidget: React.FC = () => {
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="fixed bottom-24 right-8 w-80 md:w-96 h-[500px] bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl flex flex-col z-50 overflow-hidden"
+            className="fixed bottom-24 right-4 left-4 sm:left-auto sm:right-8 w-full sm:w-80 md:w-96 h-[500px] bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl flex flex-col z-50 overflow-hidden max-h-[80vh]"
           >
             {/* Header */}
             <div className="p-4 bg-slate-800 border-b border-slate-700 flex items-center gap-2">

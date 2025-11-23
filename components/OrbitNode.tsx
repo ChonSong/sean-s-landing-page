@@ -24,6 +24,12 @@ const iconMap = {
 export const OrbitNode: React.FC<OrbitNodeProps> = ({ project, x, y, onHover, isHovered, isAnyHovered }) => {
   const Icon = iconMap[project.iconName];
 
+  const handleClick = () => {
+    if (project.url) {
+      window.open(project.url, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   return (
     <motion.div
       className="absolute top-1/2 left-1/2 flex items-center justify-center cursor-pointer"
@@ -43,6 +49,7 @@ export const OrbitNode: React.FC<OrbitNodeProps> = ({ project, x, y, onHover, is
       transition={{ type: 'spring', stiffness: 300, damping: 20 }}
       onMouseEnter={() => onHover(project.id)}
       onMouseLeave={() => onHover(null)}
+      onClick={handleClick}
     >
       <div 
         className="relative w-16 h-16 rounded-full flex items-center justify-center shadow-lg border border-white/10 backdrop-blur-md transition-colors duration-300"

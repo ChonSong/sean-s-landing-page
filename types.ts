@@ -5,6 +5,8 @@ export interface Project {
   techStack: string[];
   iconName: 'Cpu' | 'Code' | 'Globe' | 'Smartphone' | 'Database' | 'Zap';
   color: string;
+  url?: string;
+  githubUrl?: string;
 }
 
 export interface Message {

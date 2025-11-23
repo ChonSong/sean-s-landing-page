@@ -23,7 +23,7 @@ export const CentralAvatar: React.FC = () => {
         </div>
         
         <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 text-center w-64">
-           <h1 className="text-xl md:text-2xl font-bold text-white tracking-tight">Alex Developer</h1>
+           <h1 className="text-xl md:text-2xl font-bold text-white tracking-tight">Sean O'Sullivan</h1>
            <p className="text-xs text-slate-400 uppercase tracking-widest mt-1">Senior Frontend Engineer</p>
         </div>
       </div>

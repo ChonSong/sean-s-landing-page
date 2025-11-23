@@ -10,7 +10,7 @@ const App: React.FC = () => {
       
       {/* Optional Watermark/Footer */}
       <div className="fixed bottom-4 left-6 text-xs text-slate-700 pointer-events-none">
-        &copy; {new Date().getFullYear()} Alex Developer. Built with React & Gemini.
+        &copy; {new Date().getFullYear()} Sean O'Sullivan. Built with React & Gemini AI.
       </div>
     </main>
   );
