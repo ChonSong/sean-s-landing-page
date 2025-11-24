@@ -320,7 +320,7 @@ export const CONTACT_METHODS: ContactMethod[] = [
   {
     id: 'email',
     type: 'email',
-    value: 'sean@seanosullivan.dev',
+    value: 'seanos1a@gmail.com',
     label: 'Email',
     icon: '✉️',
     primary: true
@@ -328,7 +328,7 @@ export const CONTACT_METHODS: ContactMethod[] = [
   {
     id: 'phone',
     type: 'phone',
-    value: '+1 (555) 123-4567',
+    value: '+61 434 968 983',
     label: 'Phone',
     icon: '📞'
   },

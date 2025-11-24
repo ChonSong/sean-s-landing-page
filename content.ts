@@ -15,9 +15,9 @@ export const PERSONAL_INFO: PersonalInfo = {
   tagline: "Building innovative digital experiences with cutting-edge technology",
   bio: "Passionate full-stack developer with 8+ years of experience creating scalable web applications, AI-powered solutions, and innovative digital products. I specialize in React, Node.js, and cloud architecture, with a deep interest in machine learning and automation.",
   avatar: "https://picsum.photos/id/64/400/400",
-  location: "San Francisco, CA",
-  email: "sean@seanosullivan.dev",
-  phone: "+1 (555) 123-4567",
+  location: "Sydney, Australia",
+  email: "seanos1a@gmail.com",
+  phone: "+61 434 968 983",
   availability: "Available for freelance and consulting projects",
 };
 
@@ -409,7 +409,7 @@ export const SITE_METADATA: SiteMetadata = {
     'Cloud Architecture',
     'Microservices',
     'AI Integration',
-    'San Francisco Developer'
+    'Sydney Developer'
   ],
   author: "Sean O'Sullivan",
   siteUrl: 'https://sean.codeovertcp.com',
